@@ -1,0 +1,10 @@
+#C5C1C0
+ off white
+
+#0A1612
+- blacker gray
+
+#1A2930
+- dark navy blue
+
+#F7CE3E
