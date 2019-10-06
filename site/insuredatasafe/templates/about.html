@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>About Us</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="stylesheet" href="{% static "css/main.css" %}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="index">Insure Data Safe</a></strong> by Owen V, Jordan H, Darko C, Seb S.</h1>
+				<h2 style="background-image: url({% static '/images/ids-nofx-small.png' %});">&nbsp;</h2>
+				<nav id="nav">
+					<ul>
+						<li><a href="index">Home</a></li>
+						<li><a href="about">About</a></li>
+						<li><a href="elements">How It Works</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+
+					<header class="major special">
+						<h2>About the Project and Team</h2>
+						<p>The union of lifelong friends and a great team</p>
+					</header>
+					{% load static %}
+					<a href="#" class="image fit"><img src="{% static "images/us.jpg" %}" alt="" /></a>
+					<p> The Golden Hack 2019. Roomates and a four-man team</p>
+					<p> <b>Business Lead:</b> Sebastian Sypien <br> <b>Design Lead:</b> Darko Cejkov <br> <b>Developer Lead:</b> Owen Vanvulkenburg, Jordan Harris</p>
+					<p> This product was inspired by security and quality of life. Having an increasing demand of <i>the cloud</i> and the internet-of-things, we thought 
+					<br> of a solution to very confidential documents. Would you put your SSN or insurance details on a file somewhere in the cloud, <b>without knowing how secure it is?</b>
+					<br> Our market research lead us to understand that not many people know exactly what their insurance covers, and by how much financially.
+					<br> Despite spending thousands per year on insurance, we often forget how we're insured. This is why we prototyped <b>Insure Data Safe</b>.
+					<br> A very safe way to store multiple types of insurance with attention to details like expiry, coverage amounts, and the nitty gritty policies.
+					<br> Why file through cabinets to find papers when it's all here? With no outside access, your information is safe with us.
+					
+					</p>
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://github.com/officialcybersaint/tgh2019" target="_blank" class="icon fa-github"></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Untitled</li>
+						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{% static "js/jquery.min.js" %}"></script>
+			<script src="{% static "js/skel.min.js" %}"></script>
+			<script src="{% static "js/util.js" %}"></script>
+			<script src="{% static "js/main.js" %}"></script>
+
+	</body>
+</html>

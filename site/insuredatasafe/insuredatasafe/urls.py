@@ -20,6 +20,24 @@ from pages import views
 
 urlpatterns = [
     path('', views.index_view, name='index'),
+
+    path('index/', views.index_view),
+    path('elements/', views.elements_view),
     path('about/', views.about_view),
-    path('admin/', admin.site.urls),
+
+    path('index/elements', views.elements_view),
+    path('index/about', views.about_view),
+    path('index/index', views.index_view),
+
+    path('about/elements', views.elements_view),
+    path('about/index', views.index_view),
+    path('about/about', views.about_view),
+
+    path('elements/elements', views.elements_view),
+    path('elements/index', views.index_view),
+    path('elements/about', views.about_view),
+
+
+
+    path('admin', admin.site.urls),
 ]
