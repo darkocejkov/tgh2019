@@ -2735,7 +2735,7 @@
 
 		.wrapper.style3 {
 			background-attachment: fixed;
-			background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+			background-image: url("images/overlay.png"), url("../images/banner.jpg");
 			background-position: center center;
 			background-size: cover;
 		}
@@ -2812,6 +2812,13 @@
 			top: 0;
 		}
 
+		#header h2{
+			background-position: center;
+			background-size: 5%;
+			background-repeat: no-repeat;
+			margin-top: 20px;
+		}
+
 		#header nav {
 			height: inherit;
 			line-height: inherit;
@@ -2886,13 +2893,13 @@
 		}
 
 			#header.alt h1 {
-				color: #ffffff;
+				color: #3a2121;
 				left: 2.5em;
 				top: 2em;
 			}
 
 				#header.alt h1 a {
-					color: #FFF;
+					color: rgb(0, 0, 0);
 				}
 
 			#header.alt nav {
@@ -2901,7 +2908,7 @@
 			}
 
 				#header.alt nav a {
-					color: #ddd;
+					color: rgb(0, 0, 0);
 				}
 
 					#header.alt nav a:active, #header.alt nav a:hover {
@@ -3102,18 +3109,23 @@
 		}
 
 		#banner h2 {
-			color: #ffffff;
+			color: #0A1612;
 			display: inline-block;
-			font-size: 3.5em;
+			font-size: 5em;
 			line-height: 1.35;
-			margin-bottom: 0.5em;
+			margin-bottom: -5px;
+			padding: 10px;
+			border: solid black 2px;
 		}
 
 		#banner p {
-			color: #aaa;
+			color: #1A2930;
 			font-size: 1.5em;
 			margin-bottom: 1.75em;
 			text-transform: uppercase;
+			background-position: center;
+			background-repeat: no-repeat;
+			background
 		}
 
 		@media screen and (max-width: 1280px) {
