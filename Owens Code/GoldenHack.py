@@ -31,7 +31,7 @@ class user_object():
 def add_user(first_name, last_name,DOB,email,address,country,province):
     conn = pyodbc.connect(
         r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
-        r'DBQ=C:\Code\IDS.accdb;'
+        r'DBQ=C:\Users\jorda\Documents\tgh2019\Owens Code\IDS.accdb;'
         )
     cursor = conn.cursor()
     cursor.execute("INSERT INTO User (First_Name,Last_Name,DOB,Email,Address,Country,Province) values (?,?,?,?,?,?,?)",
@@ -42,7 +42,7 @@ def add_user(first_name, last_name,DOB,email,address,country,province):
 def create_policy(user_id,sponsor, policyNum, insurance_ID , company_name, typers, base_am,adj_am, desc ):
     conn = pyodbc.connect(
         r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
-        r'DBQ=C:\Code\IDS.accdb;'
+        r'DBQ=C:\Users\jorda\Documents\tgh2019\Owens Code\IDS.accdb;'
         )
     cursor = conn.cursor()
     cursor.execute("INSERT INTO Policy (Sponsor, Policy_Number, Insurance_ID, Company_Name, Type, Base_Amount, Adjusted_Amount, Description) values (?,?,?,?,?,?,?,?)",
@@ -60,7 +60,7 @@ def create_policy(user_id,sponsor, policyNum, insurance_ID , company_name, typer
 def delete_policy(policy_id):
     conn = pyodbc.connect(
         r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
-        r'DBQ=C:\Code\IDS.accdb;'
+        r'DBQ=C:\Users\jorda\Documents\tgh2019\Owens Code\IDS.accdb;'
         )
     cursor = conn.cursor()
     cursor.execute("DELETE FROM Policy where Policy_ID =?",policy_id)
@@ -73,7 +73,7 @@ def delete_policy(policy_id):
 def get_all_policy(user_id):
     conn = pyodbc.connect(
             r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
-            r'DBQ=C:\Code\IDS.accdb;'
+            r'DBQ=C:\Users\jorda\Documents\tgh2019\Owens Code\IDS.accdb;'
             )
     cursor = conn.cursor()
     policy_array=[]
@@ -92,7 +92,7 @@ def get_all_policy(user_id):
 def get_policy(policy_id):
     conn = pyodbc.connect(
             r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
-            r'DBQ=C:\Code\IDS.accdb;'
+            r'DBQ=C:\Users\jorda\Documents\tgh2019\Owens Code\IDS.accdb;'
             )
     cursor = conn.cursor()
     cursor.execute('SELECT * FROM Policy where Policy_ID=?',policy_id)
@@ -105,7 +105,7 @@ def get_policy(policy_id):
 def get_user_data(user_id):
     conn = pyodbc.connect(
             r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
-            r'DBQ=C:\Code\IDS.accdb;'
+            r'DBQ=C:\Users\jorda\Documents\tgh2019\Owens Code\IDS.accdb;'
             )
     cursor = conn.cursor()
 
@@ -123,7 +123,7 @@ def get_user_data(user_id):
 def adjust_policy(policy_id, amount):
     conn = pyodbc.connect(
             r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)};'
-            r'DBQ=C:\Code\IDS.accdb;'
+            r'DBQ=C:\Users\jorda\Documents\tgh2019\Owens Code\IDS.accdb;'
             )
     cursor = conn.cursor()
     cursor.execute("SELECT Adjusted_Amount FROM Policy where Policy_ID=?", policy_id)
@@ -139,7 +139,7 @@ def adjust_policy(policy_id, amount):
 #create_policy(2,"Cooperators","34","18","The Co-operators Insurance Group Ltd","Health","1000","1000","Insurance health policy")
 # add_user("Owen","Van Valkenburg","05/09/1998","placeholder@gmail.com","339 King Street North Waterloo","Canada","ON")
 # delete_policy(11)
-# print(get_policy(11))
+print(get_policy(16))
 #t=get_all_policy(2)
 # adjust_policy(16,-1000)
 
