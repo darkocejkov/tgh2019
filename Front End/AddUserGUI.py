@@ -1,0 +1,115 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'AddUserGUI.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_mainAddUser(object):
+    def setupUi(self, mainAddUser):
+        mainAddUser.setObjectName("mainAddUser")
+        mainAddUser.resize(800, 600)
+        mainAddUser.setAutoFillBackground(False)
+        mainAddUser.setStyleSheet("background-color:rgb(49, 99, 170)")
+        self.centralwidget = QtWidgets.QWidget(mainAddUser)
+        self.centralwidget.setObjectName("centralwidget")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(40, 70, 181, 61))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(40, 130, 181, 61))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(10, 190, 211, 61))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(120, 250, 101, 61))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(80, 310, 131, 61))
+        self.label_5.setObjectName("label_5")
+        self.label_6 = QtWidgets.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(70, 370, 141, 61))
+        self.label_6.setObjectName("label_6")
+        self.label_7 = QtWidgets.QLabel(self.centralwidget)
+        self.label_7.setGeometry(QtCore.QRect(70, 430, 141, 61))
+        self.label_7.setObjectName("label_7")
+        self.leFirstName = QtWidgets.QLineEdit(self.centralwidget)
+        self.leFirstName.setGeometry(QtCore.QRect(240, 90, 411, 21))
+        self.leFirstName.setAutoFillBackground(False)
+        self.leFirstName.setStyleSheet("background-color:#FFFFFF;")
+        self.leFirstName.setObjectName("leFirstName")
+        self.leLastName = QtWidgets.QLineEdit(self.centralwidget)
+        self.leLastName.setGeometry(QtCore.QRect(240, 160, 411, 21))
+        self.leLastName.setStyleSheet("background-color:#FFFFFF;")
+        self.leLastName.setObjectName("leLastName")
+        self.leDOB = QtWidgets.QLineEdit(self.centralwidget)
+        self.leDOB.setGeometry(QtCore.QRect(240, 210, 411, 21))
+        self.leDOB.setStyleSheet("background-color:#FFFFFF")
+        self.leDOB.setObjectName("leDOB")
+        self.leEmail = QtWidgets.QLineEdit(self.centralwidget)
+        self.leEmail.setGeometry(QtCore.QRect(240, 270, 411, 21))
+        self.leEmail.setAutoFillBackground(False)
+        self.leEmail.setStyleSheet("background-color:#FFFFFF;")
+        self.leEmail.setObjectName("leEmail")
+        self.leAddress = QtWidgets.QLineEdit(self.centralwidget)
+        self.leAddress.setGeometry(QtCore.QRect(240, 330, 411, 21))
+        self.leAddress.setStyleSheet("background-color:#FFFFFF;")
+        self.leAddress.setObjectName("leAddress")
+        self.leProvince = QtWidgets.QLineEdit(self.centralwidget)
+        self.leProvince.setGeometry(QtCore.QRect(240, 390, 411, 21))
+        self.leProvince.setStyleSheet("background-color:#FFFFFF;")
+        self.leProvince.setObjectName("leProvince")
+        self.leCountry = QtWidgets.QLineEdit(self.centralwidget)
+        self.leCountry.setGeometry(QtCore.QRect(240, 450, 411, 21))
+        self.leCountry.setAutoFillBackground(False)
+        self.leCountry.setStyleSheet("background-color:#FFFFFF;")
+        self.leCountry.setObjectName("leCountry")
+        self.label_8 = QtWidgets.QLabel(self.centralwidget)
+        self.label_8.setGeometry(QtCore.QRect(650, 460, 141, 111))
+        self.label_8.setText("")
+        self.label_8.setPixmap(QtGui.QPixmap("ids-white.png"))
+        self.label_8.setScaledContents(True)
+        self.label_8.setObjectName("label_8")
+        self.btnGoUser = QtWidgets.QPushButton(self.centralwidget)
+        self.btnGoUser.setGeometry(QtCore.QRect(360, 530, 75, 23))
+        self.btnGoUser.setStyleSheet("background-color:#FFFFFF;")
+        self.btnGoUser.setObjectName("btnGoUser")
+        self.label_9 = QtWidgets.QLabel(self.centralwidget)
+        self.label_9.setGeometry(QtCore.QRect(350, 20, 151, 41))
+        self.label_9.setObjectName("label_9")
+        mainAddUser.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(mainAddUser)
+        self.statusbar.setObjectName("statusbar")
+        mainAddUser.setStatusBar(self.statusbar)
+
+        self.retranslateUi(mainAddUser)
+        QtCore.QMetaObject.connectSlotsByName(mainAddUser)
+
+    def retranslateUi(self, mainAddUser):
+        _translate = QtCore.QCoreApplication.translate
+        mainAddUser.setWindowTitle(_translate("mainAddUser", "Add User"))
+        self.label.setText(_translate("mainAddUser", "<html><head/><body><p><span style=\" font-size:26pt; color:#ffffff;\">First Name:</span></p></body></html>"))
+        self.label_2.setText(_translate("mainAddUser", "<html><head/><body><p><span style=\" font-size:26pt; color:#ffffff;\">Last Name:</span></p></body></html>"))
+        self.label_3.setText(_translate("mainAddUser", "<html><head/><body><p><span style=\" font-size:26pt; color:#ffffff;\">Date of Birth:</span></p></body></html>"))
+        self.label_4.setText(_translate("mainAddUser", "<html><head/><body><p><span style=\" font-size:26pt; color:#ffffff;\">Email:</span></p></body></html>"))
+        self.label_5.setText(_translate("mainAddUser", "<html><head/><body><p><span style=\" font-size:26pt; color:#ffffff;\">Address:</span></p></body></html>"))
+        self.label_6.setText(_translate("mainAddUser", "<html><head/><body><p><span style=\" font-size:26pt; color:#ffffff;\">Province:</span></p></body></html>"))
+        self.label_7.setText(_translate("mainAddUser", "<html><head/><body><p><span style=\" font-size:26pt; color:#ffffff;\">Country:</span></p></body></html>"))
+        self.btnGoUser.setText(_translate("mainAddUser", "GO"))
+        self.label_9.setText(_translate("mainAddUser", "<html><head/><body><p><span style=\" font-size:26pt; text-decoration: underline; color:#ffffff;\">Add User</span></p></body></html>"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    mainAddUser = QtWidgets.QMainWindow()
+    ui = Ui_mainAddUser()
+    ui.setupUi(mainAddUser)
+    mainAddUser.show()
+    sys.exit(app.exec_())
